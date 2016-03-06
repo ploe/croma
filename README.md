@@ -2,7 +2,7 @@
 
 croma is set of Go packages for colors and formatting within the \*nix terminal.
 
-Its packages provide a clean, declaritive interfaces for generating formatted strings.
+Its packages provide a clean, declarative interfaces for generating formatted strings.
 
 It is designed to be lightweight and straightforward.
 
@@ -30,22 +30,22 @@ import (
 `fg` and `bg` have the following functions for formatting colors:
 
 ```go
-func Black(s ...string) string
-func Blue(s ...string) string
-func Cyan(s ...string) string
-func DarkGray(s ...string) string
-func Green(s ...string) string
-func LightBlue(s ...string) string
-func LightCyan(s ...string) string
-func LightGray(s ...string) string
-func LightGreen(s ...string) string
-func LightMagenta(s ...string) string
-func LightRed(s ...string) string
-func LightYellow(s ...string) string
-func Magenta(s ...string) string
-func Red(s ...string) string
-func White(s ...string) string
-func Yellow(s ...string) string
+func Black(s ...string) string { ... }
+func Blue(s ...string) string { ... }
+func Cyan(s ...string) string { ... }
+func DarkGray(s ...string) string { ... }
+func Green(s ...string) string { ... }
+func LightBlue(s ...string) string { ... }
+func LightCyan(s ...string) string { ... }
+func LightGray(s ...string) string { ... }
+func LightGreen(s ...string) string { ... }
+func LightMagenta(s ...string) string { ... }
+func LightRed(s ...string) string { ... }
+func LightYellow(s ...string) string { ... }
+func Magenta(s ...string) string { ... }
+func Red(s ...string) string { ... }
+func White(s ...string) string { ... }
+func Yellow(s ...string) string { ... }
 ```
 
 Each of these functions return a string that is formatted with the specified color. 
