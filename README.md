@@ -8,6 +8,8 @@ It is designed to be lightweight and straightforward.
 
 # How do I get it?
 
+Ensure your GOPATH environment variable is set correctly and use the command:
+
 `go get github.com/ploe/croma`
 
 # What are the packages provided?
