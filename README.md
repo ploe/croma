@@ -2,7 +2,7 @@
 
 croma is set of Go packages for colors and formatting within the \*nix terminal.
 
-Its packages provide a clean, declarative interfaces for generating formatted strings.
+Its packages provide clean, declarative interfaces for generating formatted strings.
 
 It is designed to be lightweight and straightforward.
 

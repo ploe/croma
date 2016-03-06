@@ -3,6 +3,7 @@ package bg
 import (
 	"fmt"
 	"sort"
+	"strings"
 )
 
 // Returns s joined and color formatted.
@@ -19,6 +20,13 @@ func format(c string, s ...string) string {
 	out += Code("default")
 
 	return out
+}
+
+// Utility function that concatenates the strings and nothing else.
+// Could be used as a value for a func type that dictates whether there is
+// or isn't formatting.
+func None(s ...string) string {
+	return strings.Join(s..., "")
 }
 
 var code = map[string]int {
@@ -142,4 +150,3 @@ func LightCyan (s ...string) string {
 func White (s ...string) string {
 	return format("white", s...)
 }
-
