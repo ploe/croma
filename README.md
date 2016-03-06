@@ -8,7 +8,7 @@ It is designed to be lightweight and straightforward.
 
 # How do I get it?
 
-Ensure your GOPATH environment variable is set correctly and use the command:
+Ensure your `GOPATH` environment variable is set correctly and use the command:
 
 `go get github.com/ploe/croma`
 
@@ -20,7 +20,7 @@ The package used for specifying the foreground and background colors are called 
 
 To include it in your project you will need to `import` them in to your `package`:
 
-```
+```go
 import (
 	"github.com/ploe/croma/fg"
 	"github.com/ploe/croma/bg"
@@ -29,7 +29,7 @@ import (
 
 `fg` and `bg` have the following functions for formatting colors:
 
-```
+```go
 func Black(s ...string) string
 func Blue(s ...string) string
 func Cyan(s ...string) string
@@ -54,7 +54,7 @@ They are variadic; What this means is that they can take a list of strings and t
 
 Here's an example of how to use these functions:
 
-```
+```go
 fmt.Println(fg.Red("I print red text!"))
 
 str := bg.Magenta("My background is Magenta! ", "So is mine ", "And mine...")
@@ -74,30 +74,30 @@ fmt.Println(
 )
 ```
 
-All text formatted this way is suffixed with a tag returning the input to its default state.
+All text formatted this way is suffixed with a tag returning the input to the default color.
 
 As you can see from the above format functions can be nested. This enables you to keep your formatting succinct, but flexible.
 
 There are two more functions. The first one is `Code`:
 
 
-```
+```go
 func Code(s string) string
 ```
 
 With `Code` You can specify a color with a string and get back the escape code for it.
 
 
-```
-red\_fg := fg.Code("red")
-green\_bg := bg.Code("green")
+```go
+red_fg := fg.Code("red")
+green_bg := bg.Code("green")
 terminate := bg.Code("default") + fg.Code("default")
-fmt.Println(red\_fg + green\_bg + "I am red on green" + terminate + " I'm back to normal.")
+fmt.Println(red_fg + green_bg + "I am red on green" + terminate + " I'm back to normal.")
 ```
 
 The string values you can pass to `Code` are:
 
-```
+```go
 "black":         30,
 "red":           31,
 "green":         32,	
@@ -119,12 +119,13 @@ The string values you can pass to `Code` are:
 
 And last but not least we have the function `Demo`:
 
-```
+```go
 func Demo() string
 ```
 
 With `Demo` you can return a color formatted demo string. You can use this to ascertain what colors are supported in your terminal emulator. It also looks really pretty! ;)
-```
+
+```go
 fmt.Printf(fg.Demo())
 fmt.Printf(bg.Demo())
 ```
