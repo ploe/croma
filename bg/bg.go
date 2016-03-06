@@ -56,90 +56,89 @@ func Demo() string {
 }
 
 
-
 // Returns the color code for the 8/16 colors.
 // s is a lowercase string.
 func Code(s string) string {
 	return fmt.Sprintf("\x1b[%dm", code[s])
 }
 
-// Returns the strings joined and with the foreground color as Black.
+// Returns the strings joined and with the background color as Black.
 func Black (s ...string) string {
 	return format("black", s...)
 }
 
 
-// Returns the strings joined and with the foreground color as Red.
+// Returns the strings joined and with the background color as Red.
 func Red (s ...string) string {
 	return format("red", s...)
 }
 
-// Returns the strings joined and with the foreground color as Green.
+// Returns the strings joined and with the background color as Green.
 func Green (s ...string) string {
 	return format("green", s...)
 }
 
-// Returns the strings joined and with the foreground color as Yellow.
+// Returns the strings joined and with the background color as Yellow.
 func Yellow (s ...string) string {
 	return format("yellow", s...)
 }
 
-// Returns the strings joined and with the foreground color as Blue.
+// Returns the strings joined and with the background color as Blue.
 func Blue (s ...string) string {
 	return format("blue", s...)
 }
 
-// Returns the strings joined and with the foreground color as Magenta.
+// Returns the strings joined and with the background color as Magenta.
 func Magenta (s ...string) string {
 	return format("magenta", s...)
 }
 
-// Returns the strings joined and with the foreground color as Cyan.
+// Returns the strings joined and with the background color as Cyan.
 func Cyan (s ...string) string {
 	return format("cyan", s...)
 }
 
-// Returns the strings joined and with the foreground color as Light Gray.
+// Returns the strings joined and with the background color as Light Gray.
 func LightGray (s ...string) string {
 	return format("light gray", s...)
 }
 
-// Returns the strings joined and with the foreground color as Dark Gray.
+// Returns the strings joined and with the background color as Dark Gray.
 func DarkGray (s ...string) string {
 	return format("dark gray", s...)
 }
 
-// Returns the strings joined and with the foreground color as Light Red.
+// Returns the strings joined and with the background color as Light Red.
 func LightRed (s ...string) string {
 	return format("light red", s...)
 }
 
-// Returns the strings joined and with the foreground color as Light Green.
+// Returns the strings joined and with the background color as Light Green.
 func LightGreen (s ...string) string {
 	return format("light green", s...)
 }
 
-// Returns the strings joined and with the foreground color as Light Yellow.
+// Returns the strings joined and with the background color as Light Yellow.
 func LightYellow (s ...string) string {
 	return format("light yellow", s...)
 }
 
-// Returns the strings joined and with the foreground color as Light Blue.
+// Returns the strings joined and with the background color as Light Blue.
 func LightBlue (s ...string) string {
 	return format("light blue", s...)
 }
 
-// Returns the strings joined and with the foreground color as Light Magenta.
+// Returns the strings joined and with the background color as Light Magenta.
 func LightMagenta (s ...string) string {
 	return format("light magenta", s...)
 }
 
-// Returns the strings joined and with the foreground color as Light Cyan.
+// Returns the strings joined and with the background color as Light Cyan.
 func LightCyan (s ...string) string {
 	return format("light cyan", s...)
 }
 
-// Returns the strings joined and with the foreground color as White.
+// Returns the strings joined and with the background color as White.
 func White (s ...string) string {
 	return format("white", s...)
 }
