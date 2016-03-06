@@ -4,7 +4,7 @@ croma is set of Go packages for colors and formatting within the \*nix terminal.
 
 Its packages provide a clean, declaritive interfaces for generating formatted strings.
 
-It is designed to be lightweight an straightforward.
+It is designed to be lightweight and straightforward.
 
 # How do I get it?
 
@@ -16,7 +16,7 @@ It is designed to be lightweight an straightforward.
 
 The package used for specifying the foreground and background colors are called `fg` and `bg` respectively. 
 
-To include it in your project you will need to import it:
+To include it in your project you will need to `import` them in to your `package`:
 
 ```
 import (
