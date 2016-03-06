@@ -16,7 +16,7 @@ It is designed to be lightweight an straightforward.
 
 The package used for specifying the foreground and background colors are called `fg` and `bg` respectively. 
 
-To include it in your projects you will need to import it like so:
+To include it in your project you will need to import it:
 
 ```
 import (
@@ -81,7 +81,6 @@ There are two more functions. The first one is `Code`:
 
 ```
 func Code(s string) string
-
 ```
 
 With `Code` You can specify a color with a string and get back the escape code for it.
@@ -114,7 +113,6 @@ The string values you can pass to `Code` are:
 "light magenta": 95,
 "light cyan":    96,
 "white":         97,
-
 ```
 
 And last but not least we have the function `Demo`:
@@ -124,7 +122,6 @@ func Demo() string
 ```
 
 With `Demo` you can return a color formatted demo string. You can use this to ascertain what colors are supported in your terminal emulator. It also looks really pretty! ;)
-
 ```
 fmt.Printf(fg.Demo())
 fmt.Printf(bg.Demo())
@@ -132,7 +129,7 @@ fmt.Printf(bg.Demo())
 
 ## style - Style
 
-```Coming soon...```
+```Docs coming soon...```
 
 # What license is croma available under?
 
